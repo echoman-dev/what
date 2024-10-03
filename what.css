@@ -1,0 +1,68 @@
+@import url('https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css');
+@import url('https://fonts.googleapis.com/css?family={{fontName}}');
+
+@keyframes slide-to-left {
+    from {
+        translate: 100% 0;
+    }
+  
+    to {
+        translate: -100% 0;
+    }
+}
+
+* {
+    font-family: '{{fontName}}', sans-serif;
+    overflow: hidden;
+    font-weight: {{fontWeight}};
+    text-shadow:{textShadow};
+}
+
+.main-container{
+    display: block;
+    height: 100%;
+    margin-bottom:10px;
+    box-sizing: border-box;
+    position: relative;
+}
+
+.message-row{
+    padding:5px;
+    position: absolute;
+    animation-duration: {{hideAfter}}s;
+    animation-name: slide-to-left;
+    animation-fill-mode: forwards;
+    animation-timing-function: linear;
+    width: 100%;
+    white-space: nowrap;
+}
+
+.badge{
+    display:{{displayBadges}};
+    height:{{fontSize}}px;
+}
+
+.user-box{
+    display:inline;
+    font-size:{{fontSize}}px;
+}
+
+.user-box > span{
+    font-size:{{fontSize}}px;
+}
+
+.user-message{
+    display:inline;
+    font-size:{{fontSize}}px;
+    word-wrap: break-word;
+}
+
+.emote{
+    height: {emoteSize}px;
+    vertical-align: middle;
+    background-repeat:no-repeat;
+}
+
+.action{
+    font-style: italic;
+}

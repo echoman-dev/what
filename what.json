@@ -1,0 +1,95 @@
+{
+  "testMessage": {
+    "type": "button",
+    "label": "Test message",
+    "value": "Test message",
+    "group": "Test"
+  },
+  "fontName": {
+    "type": "text",
+    "label": "Font name",
+    "value": "Montserrat",
+    "group": "Typography"
+  },
+  "fontSize": {
+    "type": "number",
+    "label": "Font size",
+    "value": 24,
+    "group": "Typography"
+  },
+  "fontWeight": {
+    "label": "Font Weight",
+    "type": "dropdown",
+    "value": "400",
+    "options": {
+      "100": "Thin (100)",
+      "300": "Light (300)",
+      "400": "Regular (400)",
+      "500": "Medium (500)",
+      "700": "Bold (700)",
+      "900": "Black (900)"
+    },
+    "group": "Typography"
+  },
+  "emoteSize": {
+    "type": "number",
+    "label": "Emote size",
+    "value": 24,
+    "group": "Typography"
+  },
+  "nickColor": {
+    "type": "dropdown",
+    "label": "Nickname color:",
+    "value": "user",
+    "options": {
+      "user": "as on twitch",
+      "random": "random",
+      "remove": "Remove username"
+    },
+    "group": "Typography"
+  },
+  "displayBadges": {
+    "type": "dropdown",
+    "label": "Display Badges",
+    "value": "inline",
+    "options": {
+      "inline": "Yes",
+      "none": "No"
+    },
+    "group": "Settings"
+  },
+  "hideAfter": {
+    "type": "number",
+    "label": "Display messages for seconds",
+    "value": 20,
+    "group": "Settings"
+  },
+  "hideCommands": {
+    "label": "Hide lines starting with ! (!command)",
+    "type": "dropdown",
+    "value": "yes",
+    "options": {
+      "yes": "Yes",
+      "no": "No"
+    },
+    "group": "Settings"
+  },
+  "ignoredUsers": {
+    "label": "Ignored users (comma separated)",
+    "type": "text",
+    "value": "StreamElements,OtherBot",
+    "group": "Settings"
+  },
+  "widgetName": {
+    "type": "hidden",
+    "value": "Custom chat"
+  },
+  "widgetAuthor": {
+    "type": "hidden",
+    "value": "echo"
+  },
+  "widgetVersion": {
+    "type": "hidden",
+    "value": "1.0"
+  }
+}
